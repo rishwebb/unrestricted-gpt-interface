@@ -1,7 +1,19 @@
-const { app, BrowserWindow, ipcMain, session } = require('electron');
+const { app, BrowserWindow, ipcMain, session, shell } = require('electron');
 const path = require('path');
 
+const TARGET_URL = 'https://uncensored.chat/';
+const TARGET_ORIGIN = new URL(TARGET_URL).origin;
+
 let mainWindow;
+
+function isAllowedHttpUrl(rawUrl) {
+  try {
+    const parsed = new URL(rawUrl);
+    return parsed.protocol === 'https:' || parsed.protocol === 'http:';
+  } catch {
+    return false;
+  }
+}
 
 function createWindow() {
   mainWindow = new BrowserWindow({
@@ -14,14 +26,52 @@ function createWindow() {
     frame: false,
     backgroundColor: '#000000',
     webPreferences: {
-      nodeIntegration: true,
-      contextIsolation: false,
+      preload: path.join(__dirname, 'preload.js'),
+      nodeIntegration: false,
+      contextIsolation: true,
       webviewTag: true
+    }
+  });
+
+  mainWindow.webContents.setWindowOpenHandler(() => ({ action: 'deny' }));
+
+  mainWindow.webContents.on('will-attach-webview', (event, webPreferences, params) => {
+    delete webPreferences.preload;
+    webPreferences.nodeIntegration = false;
+    webPreferences.contextIsolation = true;
+
+    if (!params.src || !params.src.startsWith(TARGET_ORIGIN)) {
+      event.preventDefault();
     }
   });
 
   mainWindow.loadFile('index.html');
 }
+
+app.on('web-contents-created', (event, contents) => {
+  if (contents.getType() === 'webview') {
+    contents.setWindowOpenHandler(({ url }) => {
+      if (isAllowedHttpUrl(url)) {
+        shell.openExternal(url);
+      }
+      return { action: 'deny' };
+    });
+
+    contents.on('will-navigate', (navEvent, url) => {
+      try {
+        const parsed = new URL(url);
+        if (parsed.origin !== TARGET_ORIGIN) {
+          navEvent.preventDefault();
+          if (isAllowedHttpUrl(url)) {
+            shell.openExternal(url);
+          }
+        }
+      } catch {
+        navEvent.preventDefault();
+      }
+    });
+  }
+});
 
 app.whenReady().then(() => {
   createWindow();
@@ -54,17 +104,14 @@ ipcMain.on('window-close', () => {
   if (mainWindow) mainWindow.close();
 });
 
-// IPC Handler to clear site storage for origin
-ipcMain.handle('clear-site-data', async (event, targetUrl) => {
+// IPC Handler to clear site storage for TARGET_ORIGIN
+ipcMain.handle('clear-site-data', async () => {
   try {
-    const urlObj = new URL(targetUrl || 'https://uncensored.chat/');
-    const origin = urlObj.origin;
-
     const defaultSession = session.defaultSession;
-    
+
     // Clear all storage types matching Chrome DevTools "Clear site data"
     await defaultSession.clearStorageData({
-      origin: origin,
+      origin: TARGET_ORIGIN,
       storages: [
         'appcache',
         'cookies',
@@ -80,7 +127,7 @@ ipcMain.handle('clear-site-data', async (event, targetUrl) => {
 
     await defaultSession.clearCache();
 
-    return { success: true, origin };
+    return { success: true, origin: TARGET_ORIGIN };
   } catch (err) {
     console.error('Failed to clear storage:', err);
     return { success: false, error: err.message };

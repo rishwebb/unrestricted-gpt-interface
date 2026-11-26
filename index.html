@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; img-src 'self' data:; script-src 'self';">
   <title>GPT Pro</title>
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -40,7 +41,7 @@
 
     <!-- Center App Name with Logo -->
     <div class="header-title">
-      <img src="assets/logo.png" width="16" height="16" alt="Logo" style="border-radius: 3px; object-fit: contain;">
+      <img src="assets/logo.png" width="16" height="16" alt="Logo" class="header-logo">
       <span>GPT Pro</span>
     </div>
 
@@ -59,7 +60,7 @@
   <!-- Webview Viewport -->
   <main class="webview-container">
     <div class="loading-bar" id="loading-bar"></div>
-    <webview id="web-view" src="https://uncensored.chat/" webpreferences="contextIsolation=no"></webview>
+    <webview id="web-view" src="https://uncensored.chat/"></webview>
   </main>
 
   <!-- Toast Notification Container -->
