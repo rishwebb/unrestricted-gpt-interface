@@ -21,20 +21,20 @@ A sleek, dedicated browser client designed to unlock **unlimited, unrestricted A
 
 ---
 
-## 💡 How It Works (The 1,000 Token Reset Secret)
+## 💡 How It Works (The 2,000 Token Reset Secret)
 
 > [!IMPORTANT]
 > **Why GPT Pro gives you Unlimited AI Access:**
-> - **The Problem**: Standard web access to `uncensored.chat` provides **1,000 free tokens**, which get **exhausted in just a single prompt/response**.
+> - **The Problem**: Standard web access to `uncensored.chat` provides **2,000 free tokens**, which get **exhausted in just a single prompt/response**.
 > - **The GPT Pro Solution**: Built into the top header of **GPT Pro** (Windows & Android) is a custom **`Clear Site Data`** (Desktop) / **`Reset`** (Mobile) button.
 > - **Instant Token Loop**: Clicking **`Reset`** after every message purges all origin cookies, local storage, session storage, and cache **in-place** while keeping your active page open.
-> - **The Result**: Your 1,000 free token quota is **instantly restored to 100% on every prompt**, giving you **forever-unlimited, uncensored AI generation**!
+> - **The Result**: Your 2,000 free token quota is **instantly restored to 100% on every prompt**, giving you **forever-unlimited, uncensored AI generation**!
 
 ---
 
 ## ⚡ Key Features
 
-- **🔥 Infinite Token Bypasser**: Integrated one-click **`Clear Site Data`** (Desktop) / **`Reset`** (Mobile) button instantly restores your 1,000 free token limit after every prompt.
+- **🔥 Infinite Token Bypasser**: Integrated one-click **`Clear Site Data`** (Desktop) / **`Reset`** (Mobile) button instantly restores your 2,000 free token limit after every prompt.
 - **🔓 Uncensored AI Access**: Locked directly to `uncensored.chat` with zero rate-limit blocks or session tracking.
 - **🎨 Classy Monochrome Black UI**: Minimalist obsidian interface with zero distractions and custom iOS traffic light controls on Desktop:
   - 🔴 **Red (✕)**: Close app
@@ -62,7 +62,7 @@ A sleek, dedicated browser client designed to unlock **unlimited, unrestricted A
 2. Type and send your prompt to **uncensored.chat**.
 3. Receive your full uncensored AI response.
 4. **Click `Clear Site Data` (Desktop) / `Reset` (Mobile)** at the top right header.
-5. Your 1,000 free tokens are instantly restored! Repeat infinitely for unlimited chats!
+5. Your 2,000 free tokens are instantly restored! Repeat infinitely for unlimited chats!
 
 ---
 
